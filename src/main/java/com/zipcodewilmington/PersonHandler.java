@@ -1,5 +1,7 @@
 package com.zipcodewilmington;
 
+import java.util.Arrays;
+
 /**
  * Created by leon on 1/24/18.
  */
@@ -12,6 +14,12 @@ public class PersonHandler {
 
     public String whileLoop() {
         String result = "";
+        int count = 0;
+        while (count < personArray.length ){
+            result += personArray[count];
+           count++;
+        }
+
         // create a `counter`
         // while `counter` is less than length of array
             // begin loop
@@ -28,6 +36,10 @@ public class PersonHandler {
 
     public String forLoop() {
         String result = "";
+        int i = 0;
+        for (i = 0; i < personArray.length; i++) {
+            result += personArray[i];
+        }
         // identify initial value
         // identify terminal condition
         // identify increment
@@ -55,7 +67,7 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
             // end loop
 
-        return result;
+        return null;
     }
 
 
